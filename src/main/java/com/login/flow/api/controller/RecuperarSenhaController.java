@@ -15,7 +15,7 @@ public class RecuperarSenhaController {
     @Autowired
     private UsuarioRepository usuarioRepository;
 
-    @PostMapping(value = "/{id}")
+    @PostMapping(value = "/recuperarSenha")
     public Object recuperarSenha (@RequestBody Usuario usuario){
         String email= usuario.getEmail();
        
